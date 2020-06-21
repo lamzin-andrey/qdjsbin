@@ -1,0 +1,20 @@
+В каталоге install скрипт, который будет на странице сайта для установки
+ "a-market".
+Команда вида wget && chmod && exec (как для heroku)
+Запускаемый скрипт
+ ставит git
+ качает репозитории gjs and qdjs
+ запускает Setup из репозитория qdjs/amarket
+
+Фиг с ним, пусть это будет бинарник.
+ 
+Setup будет сделан из скриптов xamppinstaller, но иметь ввиду прежде всего архивы из qdjs.
+ 
+$HOME/.qdjs/amarket/amarket-installer/amarket-installer.sh
+Пусть создает ссылку на $HOME/.qdjs/amarket/amarket-installer/amarket-installer.sh 
+ в wisker
+  и пишет, что для установки приложений из amarket 
+  вы всегда можете зайти в Игры и запустить его оттуда
+  
+Надо это дело создать, как и сам $HOME/.qdjs/amarket/amarket-installer/amarket.sh
+

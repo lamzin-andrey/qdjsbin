@@ -1,0 +1,31 @@
+Должен запустить на выполнение один рутовый и один не рутовый шелл.
+Шеллы создать самостоятельно и выполнить chmod для них.
+
+
+
+
+Первый шелл
+ создает каталоги 
+ $home/.qdjs/gjs
+ $home/.qdjs/qdjs
+ создаёт файл  gjs/releases/ubuntu-14.04-18.4/amd64/desktop-js/run.sh
+
+Второй шелл запускается от root и ставит 
+ git
+ и создает ссылку на 
+ /usr/local/bin/qdjs gjs/releases/ubuntu-14.04-18.4/amd64/desktop-js/run.sh
+ 
+
+Третий не от root проверяет существование git
+
+ качает репы в
+	$home/.qdjs/gjs
+	$home/.qdjs/qdjs
+ 
+Распаковавает 
+	gjs/releases/ubuntu-14.04-18.4/amd64/desktop-js.tar.gz
+так, чтобы $home/.qdjs/gjs/releases/ubuntu-14.04-18.4/amd64/desktop-js/hw
+существовал
+
+Запускает $home/.qdjs/qdjs/amarket/amarketinstall.sh
+ 

@@ -1,0 +1,38 @@
+Локализация главного меню окна (в перспективе и контестного меню окна).
+Локаль берется из атрибута тега html  lang
+например если в dfitv теге html
+&lt;html lang="ru"&gt;
+
+локаль будет ru
+
+В папке приложения ищется файл /js/ru.json
+
+Пока поддерживаются только "плоские" файлы
+
+Пример файла локализации главного меню окна
+<pre>
+{
+	"File":"Файл", 
+	"Open Ctrl+O": "Открыть Ctrl+O",
+	"Save Ctrl+S": "Сохранить Ctrl+S",
+	"Save as... Ctrl+Shift+S": "Сохранить как... Ctrl+Shift+S"
+}
+</pre>
+
+ТОгда, если ваш штвучюреьд содержит html
+<pre>
+<menubar style="display:none">
+	<menu title="File">
+		<item onselect="showOpenFileDlg()" id="menuItemFileOpen">Open Ctrl+O</item>
+		<item onselect="saveNow()" id="menuItemFileSave">Save Ctrl+S</item>
+		<item onselect="showSaveAs()" id="menuItemFileSaveAs">Save as... Ctrl+Shift+S</item>
+	</menu>
+</menubar>
+</pre>
+
+Пункты меню будут переименованы.
+
+
+Скоро:
+ Будут автоматически переводиться также аттрибуты value  тегов input[type="button"]  и содержимое <label></label>
+ см. tools/j.js

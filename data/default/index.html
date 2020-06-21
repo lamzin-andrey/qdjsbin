@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+	<title>GUI JS 2</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="windowButtons" content="1010" fullScree >
+	<script src="./scriptExec.js"></script>
+	<script src="./saveimage.js"></script>
+	<style href="./style.css"></style>
+	<menubar>
+		<menu title="File">
+			<item onselect="onMax">Maximize</item>
+			<item onselect="onMin">Minimize</item>
+		</menu>
+	</menubar>
+</head>
+<body>
+ Run: gjs /path/to/you/dir
+ <hr>
+ <h4 style="color:blue">CProcess</h4>
+ Enter excecute path:
+ <input id="cepath" type="text" value="g++">
+ <div id="cout" style="height:100px; overflow-y:scroll;border:1px solid brown;">
+	 <div style="color:blue">fdff</div>
+	 <div style="color:red">Error</div>
+ </div>
+ <input type="button" onclick="executeCCommand();" value="Exec">
+ <input type="button" onclick="hide();" value="Hide me!" >
+ 
+ <input type="button" onclick="Qt.hideMainMenu();" value="Hide Menu!" >
+ <input type="button" onclick="Qt.showMainMenu();" value="Show Menu!" >
+ 
+ <div>
+	 <h3>Test save canvas as png. (Prefix do)</h3>
+ 
+	 <img src="#" id="doPreview" style="max-width:90%">
+	 <input type="file"  value="loadImage" id="doLoadImage">
+	 <div id="doCout" style="height:100px; overflow-y:scroll;border:1px solid brown;">
+	 </div>
+	
+	 <canvas id="doCanvas" width="100" height="100"></canvas>
+	 <input type="button" onclick="doTestCanvas();" value="testDecodeCanvas" >
+	 <input type="button" onclick="testSaveImageFromDataUrl();" value="testSaveImage" >
+	 
+ </div><!-- end test save image-->
+ 
+</body>
+</html>
